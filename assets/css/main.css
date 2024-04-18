@@ -462,32 +462,20 @@ a.transparent {
   z-index: 276;
 }
 
-.navigation-actions {
-  cursor: pointer;
-  background: linear-gradient(to right, #EC9719 0%, #EBD613 100%);
-  border: none;
-  border-radius: 3000px;
-  text-decoration: none;
-}
-
-.navigation-actions .button-full-radius {
+.header .header-1 .container .navigation-actions {
+  width: 120px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
   position: relative;
-  width: 88px;
-  height: 16px;
-  padding: 16px 16px 16px 16px;
+  gap: 12px;
 }
 
-.navigation-actions .button-full-radius span {
+.solutions-page .header .header-1 .container .navigation-actions:first-child {
   color: #ffffff;
-  font-family: Euclid Circular A, var(--default-font-family);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
 }
 
 .hero-header-section .overlay {
@@ -640,46 +628,9 @@ a.transparent {
   flex-shrink: 0;
   gap: 12px;
   position: relative;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  z-index: 44;
-  text-decoration: none;
-}
-
-.section .container .content .section-action .button-full-radius {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
   width: 164px;
   height: 48px;
-  padding: 16px 16px 16px 16px;
-  background: linear-gradient(135deg, #07041e, #15203b);
-  z-index: 45;
-  border-radius: 3000px;
-}
-
-.section .container .content .section-action .button-full-radius .button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 52px;
-  height: 24px;
-  color: #ffffff;
-  font-family: Euclid Circular A, var(--default-font-family);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-  white-space: nowrap;
-  z-index: 46;
+  z-index: 44;
 }
 
 .section .brands {
@@ -1081,7 +1032,7 @@ a.transparent {
   position: relative;
 }
 
-.footer .container .content.links .links .footer-links-column .footer-links .footer-link .button {
+.footer .container .content.links .links .footer-links-column .footer-links .footer-link a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1093,7 +1044,7 @@ a.transparent {
   text-decoration: none;
 }
 
-.footer .container .content.links .links .footer-links-column .footer-links .footer-link .button span {
+.footer .container .content.links .links .footer-links-column .footer-links .footer-link a span {
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
@@ -1144,7 +1095,7 @@ a.transparent {
   position: relative;
 }
 
-.footer .container .content.social .footer-links .footer-link .button {
+.footer .container .content.social .footer-links .footer-link a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1155,7 +1106,7 @@ a.transparent {
   text-decoration: none;
 }
 
-.footer .container .content.social .footer-links .footer-link .button span {
+.footer .container .content.social .footer-links .footer-link a span {
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
@@ -1337,3 +1288,173 @@ a.transparent {
 }
 
 /* Cookie End */
+
+/* Buttons Start */
+
+a.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  position: relative;
+  padding: 16px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #07041e, #15203b);
+  border-radius: 3000px;
+  width: inherit;
+  height: inherit;
+  text-decoration: none;
+}
+
+a.button.large {
+  /* height: 56px; */
+}
+
+a.button.medium {
+  /* height: 48px; */
+}
+
+a.button.small {
+  /* height: 32px; */
+  padding: 8px 16px;
+}
+
+a.button span {
+  font-family: Euclid Circular A, var(--default-font-family);;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+a.button.small span {
+  font-size: 14px;
+}
+
+a.button.primary.dark {
+  background: linear-gradient(135deg, #07041e, #15203b);
+  border: none;
+  color: #ffffff;
+}
+
+a.button.primary.dark:hover {
+  background: #313A4B;
+  border: none;
+  color: #ffffff;
+}
+
+a.button.primary.dark:active {
+  background: #080721;
+  border: none;
+  color: #ffffff;
+}
+
+a.button.primary.yellow {
+  background: radial-gradient(at left, #EC9719 0%, #EBD613 100%);
+  border: none;
+  color: #ffffff;
+}
+
+a.button.primary.yellow:hover {
+  background: radial-gradient(at left, #EC9719 0%, #EBD613 100%);
+  border: none;
+  color: #ffffff;
+}
+
+a.button.primary.yellow:active {
+  background: radial-gradient(at left, #EC9719 0%, #EBD613 100%);
+  border: none;
+  color: #ffffff;
+}
+
+a.button.primary.white {
+  background: #FFFFFF;
+  border: none;
+  color: #232222;
+}
+
+a.button.primary.white:hover {
+  background: #EAEDF0;
+  border: none;
+  color: #232222;
+}
+
+a.button.primary.white:active {
+  background: #DBE2E8;
+  border: 1.5px solid #DBE2E8;
+  color: #232222;
+}
+
+a.button.primary.red {
+  background: #FF4646;
+  border: 1.5px solid #FF4646;
+  color: #FFFFFF;
+}
+
+a.button.primary.red:hover {
+  background: #F28787;
+  border: 1.5px solid #F28787;
+  color: #FFFFFF;
+}
+
+a.button.primary.red:active {
+  background: #DB0707;
+  border: 1.5px solid #DB0707;
+  color: #FFFFFF;
+}
+
+a.button.secondary.dark {
+  background: #ffffff;
+  border: 1.5px solid #080721;
+  color: #080721;
+}
+
+a.button.secondary.dark:hover {
+  background: #313A4B;
+  border: none;
+  color: #ffffff;
+}
+
+a.button.secondary.dark:active {
+  background: #080721;
+  border: none;
+  color: #ffffff;
+}
+
+a.button.secondary.red {
+  background: #ffffff;
+  border: 1.5px solid #FF4646;
+  color: #FF4646;
+}
+
+a.button.secondary.red:hover {
+  background: #F9423A;
+  border: none;
+  color: #ffffff;
+}
+
+a.button.secondary.red:active {
+  background: #DB0707;
+  border: none;
+  color: #ffffff;
+}
+
+a.button.secondary.white {
+  background: transparent;
+  border: 1.5px solid #FFFFFF;
+  color: #1D243C;
+}
+
+a.button.secondary.white:hover {
+  background: transparent;
+  border: 1.5px solid #FFFFFF;
+  color: #1D243C;
+}
+
+a.button.secondary.white:active {
+  background: #EAEDF0;
+  border: none;
+  color: #1D243C !important;
+}
+
+/* Buttons End */

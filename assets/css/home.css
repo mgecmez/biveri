@@ -314,6 +314,17 @@
   z-index: 91;
 }
 
+.services .features-section .container .content-text .actions {
+  width: 164px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+}
+
 .services .features-section .container .content-text .button-full-radius {
   display: flex;
   align-items: center;
@@ -597,6 +608,16 @@
   text-overflow: ellipsis;
   z-index: 122;
   overflow: hidden;
+}
+
+.product-content .content .posts-container .posts .card .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
 }
 
 .product-content .content .posts-container .posts .card .detail-button {

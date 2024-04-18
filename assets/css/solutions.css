@@ -114,7 +114,11 @@
   z-index: 44;
 }
 
-.section .container-info .content .actions .button-full-radius {
+.section .container-info .content .actions a:first-of-type {
+  color: #ffffff;
+}
+
+/* .section .container-info .content .actions .button-full-radius {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +156,7 @@
   text-align: center;
   white-space: nowrap;
   z-index: 46;
-}
+} */
 
 .section .container-image {
   display: flex;
@@ -1120,40 +1124,7 @@
   position: relative;
   border: none;
   z-index: 250;
-}
-
-.contact-section .container .content .content .form .actions .button-full-radius {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  gap: 8px;
-  position: relative;
-  height: 48px;
-  padding: 16px 16px 16px 16px;
-  z-index: 251;
-  border-radius: 3000px;
-}
-
-.contact-section .container .content .content .form .actions .button-full-radius span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  width: 112px;
-  height: 24px;
-  color: #ffffff;
-  font-family: Euclid Circular A, var(--default-font-family);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-  white-space: nowrap;
-  z-index: 252;
+  width: 100%;
 }
 
 /* Contact Us End */

@@ -495,7 +495,18 @@
   z-index: 108;
 }
 
-.services .features .container .content-text .button-full-radius {
+.services .features .container .content-text .actions {
+  width: 200px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* .services .features .container .content-text .button-full-radius {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -530,7 +541,7 @@
   text-align: center;
   white-space: nowrap;
   z-index: 122;
-}
+} */
 
 .services .features .container .content-image {
   flex-grow: 1;
@@ -963,7 +974,7 @@
   border-radius: 3000px;
 }
 
-.blog-section .container-title .content .button-full-radius .button {
+.blog-section .container-title .content .button-full-radius a {
   flex-shrink: 0;
   position: relative;
   cursor: pointer;
@@ -977,6 +988,21 @@
   border: none;
   z-index: 273;
   text-decoration: none;
+  /* text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #4a95da;
+  text-decoration-skip-ink: none;
+  text-decoration-offset: 2px; */
+}
+
+.blog-section .container-title .content .button-full-radius a::after {
+  content: ''; /* Ek bir içerik ekleyin */
+  position: absolute; /* Görselin pozisyonunu ayarlayın */
+  left: 0; /* Sol kenara hizalayın */
+  right: 0; /* Sağ kenara hizalayın */
+  bottom: -2px; /* Metnin altında olacak şekilde ayarlayın */
+  height: 2px; /* Çizgi kalınlığını ayarlayın */
+  background-color: #4a95da; /* Alt çizgi rengini belirtin */
 }
 
 .blog-section .container {
