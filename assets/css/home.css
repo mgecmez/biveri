@@ -6,15 +6,24 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  gap: 56px;
   position: relative;
-  width: 1440px;
-  padding: 104px 80px 64px 80px;
+  width: 100%;
   background: #313a4b;
-  z-index: 58;
 }
 
-.services .sub-main-title {
+.services > .container {
+  width: 1440px;
+  padding: 104px 80px 64px 80px;
+  gap: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.services > .container .sub-main-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +35,7 @@
   z-index: 59;
 }
 
-.services .sub-main-title .our-solutions {
+.services > .container .sub-main-title .our-solutions {
   align-self: stretch;
   flex-shrink: 0;
   flex-basis: auto;
@@ -43,7 +52,7 @@
   z-index: 60;
 }
 
-.services .sub-main-title .description {
+.services > .container .sub-main-title .description {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
@@ -56,14 +65,14 @@
   color: #ffffff;
 }
 
-.services .sub-main-title .description .gradient-text {
+.services > .container .sub-main-title .description .gradient-text {
   background: radial-gradient(circle, #EC9719 0%, #EBD613 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.services .tabs {
+.services > .container .tabs {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -77,7 +86,7 @@
   border-radius: 56px;
 }
 
-.services .tabs .tab {
+.services > .container .tabs .tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,11 +102,11 @@
   background: transparent;
 }
 
-.services .tabs .tab.active {
+.services > .container .tabs .tab.active {
   background: linear-gradient(to right, #EC9719 0%, #EBD613 100%);
 }
 
-.services .tabs .tab span {
+.services > .container .tabs .tab span {
   color: #ffffff;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 20px;
@@ -105,11 +114,11 @@
   line-height: 25px;
 }
 
-.services .tabs .tab.active span {
+.services > .container .tabs .tab.active span {
   font-weight: 600;
 }
 
-.services .tabs .iu-divider {
+.services > .container .tabs .iu-divider {
   flex-shrink: 0;
   position: relative;
   width: 1px;
@@ -120,7 +129,7 @@
   z-index: 65;
 }
 
-.services .features-section {
+.services > .container .features-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +144,7 @@
   overflow: hidden;
 }
 
-.services .features-section .container {
+.services > .container .features-section .container {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -147,7 +156,7 @@
   z-index: 78;
 }
 
-.services .features-section .container .content-text {
+.services > .container .features-section .container .content-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,7 +170,7 @@
   z-index: 79;
 }
 
-.services .features-section .container .content-text .info {
+.services > .container .features-section .container .content-text .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -173,7 +182,7 @@
   z-index: 80;
 }
 
-.services .features-section .container .content-text .info .icon {
+.services > .container .features-section .container .content-text .info .icon {
   flex-shrink: 0;
   position: relative;
   width: 56px;
@@ -185,7 +194,7 @@
   border-radius: 34px;
 }
 
-.services .features-section .container .content-text .info .heading {
+.services > .container .features-section .container .content-text .info .heading {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -197,7 +206,7 @@
   z-index: 82;
 }
 
-.services .features-section .container .content-text .info .heading .title {
+.services > .container .features-section .container .content-text .info .heading .title {
   align-self: stretch;
   flex-shrink: 0;
   flex-basis: auto;
@@ -213,7 +222,7 @@
   z-index: 83;
 }
 
-.services .features-section .container .content-text .info .heading .description {
+.services > .container .features-section .container .content-text .info .heading .description {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -231,7 +240,7 @@
   z-index: 84;
 }
 
-.services .features-section .container .content-text .check-items {
+.services > .container .features-section .container .content-text .check-items {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -244,7 +253,7 @@
   z-index: 85;
 }
 
-.services .features-section .container .content-text .check-items .check-item-text {
+.services > .container .features-section .container .content-text .check-items .check-item-text {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
@@ -255,7 +264,7 @@
   z-index: 86;
 }
 
-.services .features-section .container .content-text .check-items .check-item-text .check-icon {
+.services > .container .features-section .container .content-text .check-items .check-item-text .check-icon {
   flex-shrink: 0;
   position: relative;
   width: 28px;
@@ -265,7 +274,7 @@
   border-radius: 14px;
 }
 
-.services .features-section .container .content-text .check-items .check-item-text .check-icon .check-circle {
+.services > .container .features-section .container .content-text .check-items .check-item-text .check-icon .check-circle {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -275,7 +284,7 @@
   overflow: hidden;
 }
 
-.services .features-section .container .content-text .check-items .check-item-text .check-icon .check-circle .icon {
+.services > .container .features-section .container .content-text .check-items .check-item-text .check-icon .check-circle .icon {
   position: relative;
   width: 25.667px;
   height: 25.667px;
@@ -286,7 +295,7 @@
   z-index: 89;
 }
 
-.services .features-section .container .content-text .check-items .check-item-text .text-wrap {
+.services > .container .features-section .container .content-text .check-items .check-item-text .text-wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -298,7 +307,7 @@
   z-index: 90;
 }
 
-.services .features-section .container .content-text .check-items .check-item-text .text-wrap span {
+.services > .container .features-section .container .content-text .check-items .check-item-text .text-wrap span {
   align-self: stretch;
   flex-shrink: 0;
   flex-basis: auto;
@@ -314,7 +323,7 @@
   z-index: 91;
 }
 
-.services .features-section .container .content-text .actions {
+.services > .container .features-section .container .content-text .actions {
   width: 164px;
   height: 48px;
   display: flex;
@@ -325,7 +334,7 @@
   position: relative;
 }
 
-.services .features-section .container .content-text .button-full-radius {
+.services > .container .features-section .container .content-text .button-full-radius {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,7 +353,7 @@
   text-decoration: none;
 }
 
-.services .features-section .container .content-text .button-full-radius .button {
+.services > .container .features-section .container .content-text .button-full-radius .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,7 +372,7 @@
   z-index: 105;
 }
 
-.services .features-section .container .content-image {
+.services > .container .features-section .container .content-image {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0;
@@ -373,7 +382,7 @@
   z-index: 106;
 }
 
-.services .features-section .container .content-image .screen-mockup {
+.services > .container .features-section .container .content-image .screen-mockup {
   position: absolute;
   width: 768px;
   height: 512px;
@@ -385,7 +394,7 @@
   box-sizing: content-box;
 }
 
-.services .features-section .container .content-image .screen-mockup .mockup-shadow {
+.services > .container .features-section .container .content-image .screen-mockup .mockup-shadow {
   position: relative;
   width: 712px;
   height: 512px;
@@ -395,7 +404,7 @@
   box-shadow: 0 32px 64px 0 rgba(15, 23, 40, 0.14);
 }
 
-.services .features-section .container .content-image .screen-mockup .screen-mockup-replace-fill {
+.services > .container .features-section .container .content-image .screen-mockup .screen-mockup-replace-fill {
   position: absolute;
   top: 0;
   right: 0;

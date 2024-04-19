@@ -43,7 +43,7 @@ a.transparent {
   align-items: center;
   flex-wrap: nowrap;
   position: relative;
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
   background: #ffffff;
   overflow: hidden;
@@ -875,7 +875,7 @@ a.transparent {
   flex-shrink: 0;
   gap: 64px;
   position: relative;
-  width: 1440px;
+  width: 100%;
   padding: 64px 0 48px 0;
   background: #080721;
   z-index: 181;
