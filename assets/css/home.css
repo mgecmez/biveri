@@ -31,7 +31,7 @@
   flex-shrink: 0;
   gap: 24px;
   position: relative;
-  width: 740px;
+  /* width: 740px; */
   z-index: 59;
 }
 
@@ -79,7 +79,7 @@
   flex-shrink: 0;
   gap: 8px;
   position: relative;
-  width: 992px;
+  /* width: 992px; */
   padding: 4px 4px 4px 4px;
   background: #565e6c;
   z-index: 62;
@@ -123,7 +123,7 @@
   position: relative;
   width: 1px;
   height: 21px;
-  background: url(../images/85956077-5d1a-41a1-8811-ae3dd3374efa.png)
+  background: url(../images/ui-divider.png)
     no-repeat center;
   background-size: cover;
   z-index: 65;
@@ -187,11 +187,15 @@
   position: relative;
   width: 56px;
   height: 56px;
-  background: url(../images/6116838f-ae1a-49ee-9d1b-5b71d9a8b128.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 81;
   border-radius: 34px;
+  background: url(../images/ellipse.png) no-repeat center;
+}
+
+.services > .container .features-section .container .content-text .info .icon img {
+  width: 32px;
+  height: 32px;
+  margin: 12px;
 }
 
 .services > .container .features-section .container .content-text .info .heading {
@@ -230,7 +234,6 @@
   flex-shrink: 0;
   position: relative;
   width: 560px;
-  height: 48px;
   color: #ffffff;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 16px;
@@ -269,31 +272,16 @@
   position: relative;
   width: 28px;
   height: 28px;
-  z-index: 87;
-  overflow: hidden;
-  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #96E5BE;
 }
 
-.services > .container .features-section .container .content-text .check-items .check-item-text .check-icon .check-circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 88;
-  overflow: hidden;
-}
-
-.services > .container .features-section .container .content-text .check-items .check-item-text .check-icon .check-circle .icon {
-  position: relative;
-  width: 25.667px;
-  height: 25.667px;
-  margin: 1.167px 0 0 1.167px;
-  background: url(../images/c69328e9-68cf-4f27-957e-60af2f3af67c.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 89;
-}
+/* .services > .container .features-section .container .content-text .check-items .check-item-text .check-icon img {
+  width: 26px;
+} */
 
 .services > .container .features-section .container .content-text .check-items .check-item-text .text-wrap {
   display: flex;
@@ -378,43 +366,17 @@
   flex-basis: 0;
   position: relative;
   min-width: 0;
-  height: 512px;
-  z-index: 106;
 }
 
 .services > .container .features-section .container .content-image .screen-mockup {
-  position: absolute;
   width: 768px;
-  height: 512px;
-  top: 0;
-  left: 0;
-  border: 4px solid #344159;
-  z-index: 107;
-  border-radius: 10px;
   box-sizing: content-box;
-}
-
-.services > .container .features-section .container .content-image .screen-mockup .mockup-shadow {
-  position: relative;
-  width: 712px;
-  height: 512px;
-  margin: 0 0 0 28px;
-  background: #575b6e;
-  z-index: 108;
   box-shadow: 0 32px 64px 0 rgba(15, 23, 40, 0.14);
 }
 
-.services > .container .features-section .container .content-image .screen-mockup .screen-mockup-replace-fill {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../images/7d44cd78ad5175bc6e450b65097c3ff3dc29d8f6.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 109;
-  overflow: hidden;
+.services > .container .features-section .container .content-image .screen-mockup img {
+  width: inherit;
+  border: 4px solid #344159;
   border-radius: 10px;
 }
 
@@ -512,7 +474,7 @@
 
 .product-content .content .posts-container {
   position: relative;
-  overflow-x: hidden; /* Yatay taşma durumunda kaydırma çubuğunu gizler */
+  overflow-x: hidden;
   display: flex;
   align-items: flex-start;
   align-self: stretch;
@@ -564,11 +526,17 @@
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  height: 240px;
 }
 
 .product-content .content .posts-container .posts .card .info .image img {
-  width: 368px;
-  height: 240px;
+  width: 100%;
+  transition: transform .3s ease-in-out;
+}
+
+.product-content .content .posts-container .posts .card .info:hover .image img {
+  transform: scale(1.1);
+  transition: transform .3s ease-in-out;
 }
 
 .product-content .content .posts-container .posts .card .info .detail {
@@ -693,50 +661,50 @@
   border: 0.75px solid #ccd6df;
   z-index: 142;
   border-radius: 2250px;
-}
-
-.product-content .content .arrows .component:hover {
   cursor: pointer;
 }
 
-.product-content .content .arrows .component .left {
+.product-content .content .arrows .component .arrow {
   flex-shrink: 0;
   position: relative;
-  width: 24px;
-  height: 24px;
-  z-index: 143;
-  overflow: hidden;
+  font-size: 24px;
+  color: #3F4B62;
 }
 
-.product-content .content .arrows .component .left .icon {
-  position: relative;
-  width: 18px;
-  height: 14px;
-  margin: 5px 0 0 3.001px;
-  background: url(../images/b82096b4-30d3-476a-b754-2c1915f72509.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 144;
+.product-content .content .arrows #product-left-arrow.component:hover .arrow {
+  -webkit-animation: left-arrows 0.75s infinite;
+  animation: left-arrows 0.75s infinite;
 }
 
-.product-content .content .arrows .component .right {
-  flex-shrink: 0;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  z-index: 146;
-  overflow: hidden;
+@-webkit-keyframes left-arrows {
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes left-arrows {
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
-.product-content .content .arrows .component .right .icon {
-  position: relative;
-  width: 17.667px;
-  height: 13.667px;
-  margin: 5.167px 0 0 3.167px;
-  background: url(../images/d00357c2-131e-4f96-a517-98ab14aeea28.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 147;
+.product-content .content .arrows #product-right-arrow.component:hover .arrow {
+  -webkit-animation: right-arrows 0.75s infinite;
+  animation: right-arrows 0.75s infinite;
+}
+
+@-webkit-keyframes right-arrows {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+@keyframes right-arrows {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }
 
 /* Product End */
@@ -781,90 +749,22 @@
   z-index: 150;
 }
 
-.about-us .container .content-image .flex-row-up {
+.about-us .container .content-image .flex-row {
   position: relative;
-  width: 336px;
   height: 240px;
-  margin: 0 0 0 120px;
-  z-index: 155;
+  display: flex;
+  gap: 15px;
+  align-items: end;
+  justify-content: center;
 }
 
-.about-us .container .content-image .flex-row-up .image-55 {
-  position: absolute;
-  width: 160px;
-  height: 240px;
-  top: 0;
-  left: 50%;
-  background: url(../images/2094c61bd22ec0f75d9160ebe2cc3c5eced96aa1.png)
-    no-repeat center;
-  background-size: cover;
-  transform: translate(5%, 0);
-  z-index: 151;
-  overflow: hidden;
-}
-
-.about-us .container .content-image .flex-row-up .image-56 {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  top: 80px;
-  left: 50%;
-  background: url(../images/f820d3d15c4fd9c0b11ebcc5f455f4ed3a5b6429.png)
-    no-repeat center;
-  background-size: cover;
-  transform: translate(-105%, 0);
-  z-index: 155;
-  overflow: hidden;
-}
-
-.about-us .container .content-image .flex-row-down {
-  position: relative;
-  width: 576px;
-  height: 240px;
+.about-us .container .content-image .flex-row:last-of-type {
+  align-items: start;
   margin: 16px 0 0 0;
-  z-index: 154;
 }
 
-.about-us .container .content-image .flex-row-down .image-57 {
-  position: absolute;
-  width: 192px;
-  height: 192px;
-  top: 0;
-  left: 50%;
-  background: url(../images/4507a3162dffac2d85eeb6e31d1a15c57091a204.png)
-    no-repeat center;
-  background-size: cover;
-  transform: translate(-150%, 0);
-  z-index: 153;
-  overflow: hidden;
-}
-
-.about-us .container .content-image .flex-row-down .image-58 {
-  position: absolute;
+.about-us .container .content-image .flex-row img {
   width: 160px;
-  height: 240px;
-  top: 0;
-  left: 50%;
-  background: url(../images/ba5913f8bd1388834e29577237e88f25855131f9.png)
-    no-repeat center;
-  background-size: cover;
-  transform: translate(-50%, 0);
-  z-index: 154;
-  overflow: hidden;
-}
-
-.about-us .container .content-image .flex-row-down .image-59 {
-  position: absolute;
-  width: 192px;
-  height: 160px;
-  top: 0;
-  left: 50%;
-  background: url(../images/d4b04f99db960f52b2cf64f40f4e56eb5cd841e3.png)
-    no-repeat center;
-  background-size: cover;
-  transform: translate(50%, 0);
-  z-index: 152;
-  overflow: hidden;
 }
 
 .about-us .container .content-text {

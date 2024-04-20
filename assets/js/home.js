@@ -4,9 +4,19 @@ $(document).ready(async function () {
 });
 
 function serviceClick() {
+  var first = $(".services .tabs button")[0];
+  $(first).addClass("active");
+  var firstId = $(first).attr('id');
+  $(`.services .features-section .container`).hide();
+  $(`.services .features-section #${firstId}.container`).show();
+
   $(".services .tabs button").on("click", (e) => {
     $(".services .tabs button").removeClass("active");
     $(e.currentTarget).addClass("active");
+
+    var id = $(e.currentTarget).attr('id');
+    $(`.services .features-section .container`).hide();
+    $(`.services .features-section #${id}.container`).show();
   });
 }
 

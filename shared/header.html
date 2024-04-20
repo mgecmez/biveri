@@ -1,0 +1,159 @@
+<div class="header">
+  <div class="header-1">
+    <div class="container">
+      <div class="content">
+        <a href="index.html" class="logo">
+          <div class="group">
+            <div class="union"></div>
+            <div class="biveri">
+              <span class="bi">bi</span><span class="veri">veri</span>
+            </div>
+          </div>
+        </a>
+        <div class="navigation">
+          <div class="menu-item-base" id="menu-products">
+            <div class="button">
+              <span class="text">Ürünler</span>
+              <div class="chevron">
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+            </div>
+            <div class="header-dropdown" id="products">
+              <div class="menu-content">
+                <div class="nav-menu-item">
+                  <div class="icon">
+                    <img src="/assets/images/icons/pyramid.png" />
+                  </div>
+                  <div class="item-content">
+                    <div class="text-supporting">
+                      <div class="text-badge">
+                        <a href="product.html">Pyramid</a>
+                      </div>
+                      <span class="description"
+                        >Lorem ipsum dolor sit amet consectetur.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-menu-item">
+                  <div class="icon">
+                    <img src="/assets/images/icons/big-id.png" />
+                  </div>
+                  <div class="item-content">
+                    <div class="text-supporting">
+                      <div class="text-badge">
+                        <a href="product.html">Big ID</a>
+                      </div>
+                      <span class="description"
+                        >Lorem ipsum dolor sit amet consectetur. Tellus volutpat vitae
+                        hendrerit dolor vitae.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-menu-item">
+                  <div class="icon">
+                    <img src="/assets/images/icons/python.png" />
+                  </div>
+                  <div class="item-content">
+                    <div class="text-supporting">
+                      <div class="text-badge">
+                        <a href="product.html">Python RPA</a>
+                      </div>
+                      <span class="description"
+                        >Lorem ipsum dolor sit amet consectetur. Amet nulla.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item-base" id="menu-solutions">
+            <div class="button">
+              <span class="text">Çözümler</span>
+              <div class="chevron">
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+            </div>
+            <div class="header-dropdown" id="solutions">
+              <div class="menu-content">
+                <div class="nav-menu-item">
+                  <div class="icon">
+                    <img src="/assets/images/icons/power-bi.png" />
+                  </div>
+                  <div class="item-content">
+                    <div class="text-supporting">
+                      <div class="text-badge">
+                        <a href="solutions.html">Power BI</a>
+                      </div>
+                      <span class="description"
+                        >Lorem ipsum dolor sit amet consectetur.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-menu-item">
+                  <div class="icon">
+                    <img src="/assets/images/icons/web-mobile.png" />
+                  </div>
+                  <div class="item-content">
+                    <div class="text-supporting">
+                      <div class="text-badge">
+                        <a href="solutions.html">Web & Mobil</a>
+                      </div>
+                      <span class="description"
+                        >Lorem ipsum dolor sit amet consectetur. Tellus volutpat vitae
+                        hendrerit dolor vitae.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item-base">
+            <div class="button">
+              <span class="text">Lorem</span>
+            </div>
+          </div>
+          <div class="menu-item-base">
+            <div class="button">
+              <span class="text">Lorem</span>
+            </div>
+          </div>
+          <div class="menu-item-base">
+            <div class="button">
+              <span class="text">Lorem</span>
+            </div>
+          </div>
+          <div class="menu-item-base">
+            <div class="button">
+              <span class="text">Lorem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-actions">
+        <a href="#" class="button primary yellow medium">
+          <span>Button</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay"></div>
+
+<script>
+  $(".menu-item-base").hover(
+    function () {
+      $(this).find(".header-dropdown").addClass("show");
+      $(".hero-header-section").addClass("active");
+    },
+    function () {
+      $(this).find(".header-dropdown").removeClass("show");
+      $(".hero-header-section").removeClass("active");
+    }
+  );
+</script>

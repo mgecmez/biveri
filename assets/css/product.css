@@ -363,7 +363,6 @@
 
 .services .features .container .content-text .icon-text .featured-icon img {
   width: 32px;
-  height: 32px;
 }
 
 .services .features .container .content-text .icon-text .heading-description {
@@ -441,30 +440,11 @@
   position: relative;
   width: 28px;
   height: 28px;
-  z-index: 104;
-  overflow: hidden;
-  border-radius: 14px;
-}
-
-.services .features .container .content-text .check-items .check-item-text .check-icon .check-circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 105;
-  overflow: hidden;
-}
-
-.services .features .container .content-text .check-items .check-item-text .check-icon .check-circle .icon {
-  position: relative;
-  width: 25.667px;
-  height: 25.667px;
-  margin: 1.167px 0 0 1.167px;
-  background: url(../images/a0202696-e6a5-4739-80b0-6b3afea49e49.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 106;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #313A4B;
 }
 
 .services .features .container .content-text .check-items .check-item-text .text-wrap {
@@ -804,53 +784,26 @@
   cursor: pointer;
 }
 
-.faq-section .container .faq-items .faq-item .content .icon-wrap .minus-circle {
-  flex-shrink: 0;
-  position: relative;
+.faq-section .container .faq-items .faq-item .content .icon-wrap .circle {
   width: 24px;
   height: 24px;
-  z-index: 212;
-  overflow: hidden;
+  border: 2px solid #575C6F;
+  border-radius: 3000px;
+  padding-left: 3.5px;
+  padding-top: 2px;
 }
 
-.faq-section .container .faq-items .faq-item .content .icon-wrap .minus-circle .icon {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  margin: 1px 0 0 1px;
-  background: url(../images/27de1cef-890a-458e-bab1-51a69fb12174.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 213;
+.faq-section .container .faq-items .faq-item .content .icon-wrap .circle i {
+  color: #575C6F;
 }
 
-.faq-section .container .faq-items .faq-item .content .icon-wrap .plus-circle {
-  flex-shrink: 0;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  z-index: 219;
-  overflow: hidden;
-}
-
-.faq-section .container .faq-items .faq-item .content .icon-wrap .plus-circle .icon {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  margin: 1px 0 0 1px;
-  background: url(../images/bf5ea383-a25f-4738-a5fd-e67c00ec01a3.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 220;
-}
-
-.faq-section .container .faq-items .faq-item.active .content .icon-wrap .minus-circle,
-.faq-section .container .faq-items .faq-item .content .icon-wrap .plus-circle {
+.faq-section .container .faq-items .faq-item.active .content .icon-wrap .circle.minus,
+.faq-section .container .faq-items .faq-item .content .icon-wrap .circle.plus {
   display: flex;
 }
 
-.faq-section .container .faq-items .faq-item.active .content .icon-wrap .plus-circle,
-.faq-section .container .faq-items .faq-item .content .icon-wrap .minus-circle {
+.faq-section .container .faq-items .faq-item.active .content .icon-wrap .circle.plus,
+.faq-section .container .faq-items .faq-item .content .icon-wrap .circle.minus {
   display: none;
 }
 
@@ -1119,19 +1072,8 @@
   flex-shrink: 0;
   position: relative;
   width: 24px;
-  padding: 4px 0 0 0;
-  z-index: 284;
-}
-
-.blog-section .container .content .blog-post-card .info .heading-icon .icon-wrap .icon {
-  position: relative;
-  width: 14px;
-  height: 14px;
-  margin: 5px 0 0 5px;
-  background: url(../images/69f4f805-abed-440c-97b7-84e278898a95.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 286;
+  padding: 7px 0 0 0;
+  font-size: 20px;
 }
 
 /* Blog End */

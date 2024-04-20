@@ -177,21 +177,12 @@
   position: relative;
   min-width: 0;
   height: 480px;
+  width: 100%;
   z-index: 50;
 }
 
-.section .container-image .content .macbook-pro-mockup {
-  position: absolute;
-  width: 1216px;
-  height: 710.125px;
-  top: 0;
-  left: 50%;
-  background: url(../images/c62facbe-752f-4542-bf22-e2740c33fb36.png)
-    no-repeat center;
-  background-size: cover;
-  transform: translate(-50%, 0);
-  z-index: 51;
-  overflow: hidden;
+.section .container-image .content img {
+  width: inherit;
 }
 
 .section .bg-animate {
@@ -211,7 +202,7 @@
   height: 130%;
   top: -27.5%;
   left: -9.73%;
-  background: url(../images/58660845-b0db-4d11-a2a6-1f3a0f21390d.png)
+  background: url(../images/bg-solutions.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 53;
@@ -783,11 +774,13 @@
   flex-basis: 0;
   position: relative;
   min-width: 0;
-  background: url(../images/57f99cc8cd5038e4140e2e17bc4b684185293a79.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 203;
   border-radius: 16px;
+  width: 768px;
+  overflow: hidden;
+}
+
+.contact-section .container .image img {
+  width: 100%;
 }
 
 .contact-section .container .content {
