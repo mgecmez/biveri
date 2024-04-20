@@ -862,7 +862,7 @@
   flex-shrink: 0;
   gap: 12px;
   position: relative;
-  width: 164px;
+  /* width: 164px; */
   cursor: pointer;
   background: transparent;
   border: none;
