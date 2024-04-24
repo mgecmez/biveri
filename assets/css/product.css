@@ -382,14 +382,12 @@
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
-  height: 40px;
   color: #0c101c;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   text-align: left;
-  white-space: nowrap;
   z-index: 100;
 }
 
@@ -401,7 +399,6 @@
   flex-shrink: 0;
   position: relative;
   width: 560px;
-  height: 48px;
   color: #474a53;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 16px;
@@ -422,6 +419,22 @@
   position: relative;
   padding: 0 0 0 16px;
   z-index: 102;
+}
+
+.services .features .container .content-text .check-items .heading {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 12px;
+  position: relative;
+  color: #0c101c;
+  font-family: Euclid Circular A, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
 }
 
 .services .features .container .content-text .check-items .check-item-text {
@@ -464,14 +477,12 @@
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
-  height: 25px;
   color: #0c101c;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-  white-space: nowrap;
   z-index: 108;
 }
 
@@ -739,14 +750,12 @@
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
-  height: 25px;
   color: #30333d;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 20px;
   font-weight: 500;
   line-height: 25px;
   text-align: left;
-  white-space: nowrap;
   z-index: 209;
 }
 

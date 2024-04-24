@@ -197,7 +197,7 @@ a.transparent {
   z-index: 15;
 }
 
-.menu-item-base .button {
+.menu-item-base .item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,11 +208,11 @@ a.transparent {
   overflow: hidden;
 }
 
-.menu-item-base:hover .button {
+.menu-item-base:hover .item {
   cursor: pointer;
 }
 
-.menu-item-base .button .text {
+.menu-item-base .item .text {
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
@@ -229,7 +229,7 @@ a.transparent {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-item-base .button .chevron {
+.menu-item-base .item .chevron {
   flex-shrink: 0;
   position: relative;
   width: 20px;
@@ -238,17 +238,17 @@ a.transparent {
   color: #0C101C;
 }
 
-.solutions-page .menu-item-base .button .chevron {
+.solutions-page .menu-item-base .item .chevron {
   color: #FFFFFF;
 }
 
-.menu-item-base:hover .button .chevron i.fa-chevron-up,
-.menu-item-base .button .chevron i.fa-chevron-down {
+.menu-item-base:hover .item .chevron i.fa-chevron-up,
+.menu-item-base .item .chevron i.fa-chevron-down {
   display: contents;
 }
 
-.menu-item-base:hover .button .chevron i.fa-chevron-down,
-.menu-item-base .button .chevron i.fa-chevron-up {
+.menu-item-base:hover .item .chevron i.fa-chevron-down,
+.menu-item-base .item .chevron i.fa-chevron-up {
   display: none;
 }
 
@@ -390,7 +390,6 @@ a.transparent {
 }
 
 .header .header-1 .container .navigation-actions {
-  width: 120px;
   height: 48px;
   display: flex;
   align-items: center;
@@ -697,14 +696,12 @@ a.transparent {
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
-  height: 40px;
   color: #ffffff;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   text-align: left;
-  white-space: nowrap;
   z-index: 171;
 }
 
