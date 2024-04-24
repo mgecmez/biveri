@@ -223,10 +223,7 @@ a.transparent {
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
-  background: linear-gradient(135deg, #07041e, #15203b);
-  z-index: 13;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0C101C;
 }
 
 .menu-item-base .item .chevron {
@@ -238,6 +235,7 @@ a.transparent {
   color: #0C101C;
 }
 
+.solutions-page .menu-item-base .item .text,
 .solutions-page .menu-item-base .item .chevron {
   color: #FFFFFF;
 }
