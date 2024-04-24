@@ -1,6 +1,9 @@
 $(document).ready(async function () {
   getHeader();
   getFooter();
+  getCtaSection();
+  getBlogSection();
+
   cookieSettins();
 });
 
@@ -10,6 +13,14 @@ function getHeader() {
 
 function getFooter() {
   $('.footer').load('shared/footer.html');
+}
+
+function getCtaSection() {
+  $('.cta-section').load('shared/cta-section.html');
+}
+
+function getBlogSection() {
+  $('.blog-section').load('shared/blog-section.html');
 }
 
 // function menuHover() {
@@ -28,11 +39,13 @@ function getFooter() {
 function cookieSettins() {
   var cookie = localStorage.getItem("biveri-cookie");
   if (!cookie) {
+    $('.cookie-section').load('shared/cookie-section.html');
+
     $(".cookie-overlay").show();
     $(".cookie").addClass("active");
   } else {
-    $(".cookie-overlay").hide();
-    $(".cookie").removeClass("active");
+    // $(".cookie-overlay").hide();
+    // $(".cookie").removeClass("active");
   }
   // console.log(api);
   // api.run(config);
