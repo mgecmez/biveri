@@ -164,6 +164,34 @@
 }
 
 .features-section .container .screen-mockup {
+  /* flex-shrink: 0; */
+  position: relative;
+  /* width: 768px; */
+  height: 512px;
+  /* border: 4px solid #344159; */
+  /* z-index: 84; */
+  /* border-radius: 10px; */
+  /* box-sizing: content-box; */
+  display: flex;
+  justify-content: end;
+}
+
+.features-section .container .screen-mockup img {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* overflow: hidden; */
+  /* width: 768px; */
+  height: 512px;
+  background: #575b6e;
+  box-shadow: 0 32px 64px 0 rgba(15, 23, 40, 0.14);
+  border-radius: 16px 0 0 16px;
+  border-top: 4px solid #344159;
+  border-left: 4px solid #344159;
+  border-bottom: 4px solid #344159;
+}
+
+/* .features-section .container .screen-mockup {
   flex-shrink: 0;
   position: relative;
   width: 768px;
@@ -183,7 +211,7 @@
   height: 512px;
   background: #575b6e;
   box-shadow: 0 32px 64px 0 rgba(15, 23, 40, 0.14);
-}
+} */
 
 /* Features Section End */
 
@@ -249,7 +277,7 @@
   flex-basis: auto;
   position: relative;
   width: 740px;
-  height: 25px;
+  /* height: 25px; */
   color: #9278e5;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 20px;
@@ -269,7 +297,7 @@
   position: relative;
   width: 768px;
   min-width: 0;
-  height: 102px;
+  /* height: 102px; */
   color: #0c101c;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 40px;
@@ -285,7 +313,7 @@
   flex-basis: auto;
   position: relative;
   min-width: 0;
-  height: 25px;
+  /* height: 25px; */
   color: #53565e;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 20px;
@@ -392,11 +420,11 @@
 }
 
 .services .features .container .content-text .icon-text .heading-description .description {
-  display: flex;
+  /* display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
-  flex-shrink: 0;
+  flex-shrink: 0; */
   position: relative;
   width: 560px;
   color: #474a53;
@@ -767,7 +795,7 @@
   flex-shrink: 0;
   position: relative;
   width: 720px;
-  height: 48px;
+  /* height: 48px; */
   color: #777980;
   font-family: Euclid Circular A, var(--default-font-family);
   font-size: 16px;

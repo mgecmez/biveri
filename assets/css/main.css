@@ -460,23 +460,33 @@ a.transparent {
 }
 
 .section .container .image {
-  width: 560px;
-  height: 640px;
-  z-index: 38;
-  border-radius: 16px;
-}
-
-.section .container .image {
   position: absolute;
   width: 560px;
   height: 640px;
   top: 0;
   right: 112px;
-  background: url(../images/services.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 38;
   border-radius: 16px;
+}
+
+.home-page .section .container .image {
+  background: url(../images/services.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.product-page.bigid .section .container .image {
+  background: url(../images/banner-bigid.png) no-repeat center;
+  background-size: cover;
+}
+
+.product-page.powerbi .section .container .image {
+  background: url(../images/banner-power-bi.png) no-repeat center;
+  background-size: cover;
+}
+
+.product-page.pyramid .section .container .image {
+  background: url(../images/banner-pyramid.png) no-repeat center;
+  background-size: cover;
 }
 
 .section .container .image .hand-drawn-arrow {
@@ -559,7 +569,6 @@ a.transparent {
   flex-shrink: 0;
   gap: 12px;
   position: relative;
-  width: 164px;
   height: 48px;
   z-index: 44;
 }
@@ -606,13 +615,14 @@ a.transparent {
   position: relative;
   min-width: 0;
   height: 32px;
-  padding: 0 120px 0 120px;
-  z-index: 49;
+  /* padding: 0 120px 0 120px; */
+  /* z-index: 49; */
+  gap: 10px;
 }
 
 .section .brands .companies img {
   height: inherit;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 /* Section End */
