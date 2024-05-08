@@ -489,6 +489,11 @@ a.transparent {
   background-size: cover;
 }
 
+.product-page.python .section .container .image {
+  background: url(../images/banner-python.png) no-repeat center;
+  background-size: cover;
+}
+
 .section .container .image .hand-drawn-arrow {
   position: relative;
   width: 300px;
